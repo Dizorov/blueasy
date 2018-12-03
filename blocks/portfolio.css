@@ -74,9 +74,34 @@
 }
 
 .portfolio__item {
+	cursor: pointer;
+	position: relative;
 	margin: 0;
 	padding: 0;
 	width: 270px;
 	height: 270px;
 	margin-bottom: 30px;
+}
+
+.portfolio__item:hover::before {
+	content:"";
+	z-index: 1;
+	position: absolute;
+	width: 270px;
+	height: 270px;
+	top: 0;
+	left: 0;
+	background-color: rgba(53, 63, 70, 0.85);
+}
+
+.portfolio__item:hover::after {
+	content: "";
+	z-index: 2;
+	position: absolute;
+	background-image: url('../img/+.png');
+	width: 32px;
+	height: 33px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
