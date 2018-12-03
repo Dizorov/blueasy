@@ -87,6 +87,6 @@
 }
 
 .slogan_bg {
-	padding-bottom: 4px;
+	padding: 0 15px 4px;
 	background-color: rgba(53, 63, 70, 0.85);
 }
