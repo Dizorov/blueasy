@@ -1,0 +1,115 @@
+.contact {
+	padding: 80px 0;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: 'Segoe UI', sans-serif;
+	background-image: url('../img/contact_bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.contact__header {
+	display: block;
+	width: 100%;
+	position: relative;
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 30px;
+	line-height: 24px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.contact__header::after {
+	content: "";
+	position: absolute;
+	bottom: -12px;
+	left: 0;
+	width: 45px;
+	height: 2px;
+	background-color: currentColor;
+}
+
+.contact__form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+.contact__column {
+	min-width: 570px;
+	max-width: 570px;
+}
+
+.contact__label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.contact__input {
+	margin-bottom: 30px;
+	padding: 12px 20px 17px;
+	box-sizing: border-box;
+	width: 470px;
+	color: #ffffff;
+	font-size: 20px;
+	line-height: 27px;
+	border: 2px solid #ffffff;
+	background-color: transparent;
+}
+
+.contact__contacts {
+	margin: 20px 0 30px;
+	font-weight: 600;
+}
+
+.contact__text-area {
+	width: 1170px;
+	margin-bottom: 35px;
+	padding: 12px 20px 17px;
+	box-sizing: border-box;
+	color: #ffffff;
+	font-size: 20px;
+	line-height: 28px;
+	border: 2px solid #ffffff;
+	background-color: transparent;
+}
+
+.contact__input:focus,
+.contact__text-area:focus {
+	background-color: rgba(0, 0, 0, 0.1);
+	border: 2px solid #ffffff;
+	outline: none;
+	box-shadow: none;
+}
+
+.contact__input:hover,
+.contact__text-area:hover {
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+.contact__input:invalid {
+	border-color: #ff5050;
+	box-shadow: none;
+}
+
+.contact__button {
+	cursor: pointer;
+	padding: 23px 150px;
+	color: #ffffff;
+	font-weight: bold;
+	border: none;
+	background-color: #4bcaff;
+}
+
+.contact__button:hover {
+	filter: saturate(80%);
+}
+
+.contact__button:active {
+	filter: contrast(80%);
+}
