@@ -1,0 +1,105 @@
+.who-is {
+	padding-top: 70px;
+	padding-bottom: 135px;
+
+	font-family: 'Segoe UI', sans-serif;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 24px;
+
+	background-image: url('../img/who-is_bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.who-is__header {
+	position: relative;
+	margin: 25px 0;
+	font-size: 30px;
+	line-height: 24px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.who-is__header::after {
+	content: "";
+	position: absolute;
+	bottom: -12px;
+	left: 0;
+	width: 45px;
+	height: 2px;
+	background-color: currentColor;
+}
+
+.who-is__column {
+	width: 570px;
+}
+
+.who-is__text {
+	margin: 23px 0;
+}
+
+.who-is__social {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.who-is__social-item {
+	display: flex;
+	margin: 0;
+	margin-top: 10px;
+	margin-right: 20px;
+	padding: 0;
+	width: 60px;
+	height: 60px;
+	box-shadow: 0 0 0 2px #ffffff;
+	transition: .1s ease-out;
+}
+
+.who-is__social-link {
+	display: block;
+	position: relative;
+	width: 60px;
+	height: 60px;
+}
+
+.who-is__social-link::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+}
+
+.who-is__social-link_twitter::before {
+	background-image: url('../img/icon-twitter.png');
+	width: 28px;
+	height: 22px;
+}
+
+.who-is__social-link_google-plus::before {
+	background-image: url('../img/icon-google-plus.png');
+	width: 28px;
+	height: 29px;
+}
+
+.who-is__social-link_dribble::before {
+	background-image: url('../img/icon-dribbble.png');
+	width: 26px;
+	height: 27px;
+}
+
+.who-is__social-link_coffee::before {
+	background-image: url('../img/icon-coffee.png');
+	width: 31px;
+	height: 24px;
+}
+
+.who-is__social-item:hover {
+	transform: scale(0.95);
+}
