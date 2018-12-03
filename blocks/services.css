@@ -17,7 +17,7 @@
 	font-weight: 300;
 }
 
-.services__header:after {
+.services__header::after {
 	content: "";
 	position: absolute;
 	bottom: -10px;
