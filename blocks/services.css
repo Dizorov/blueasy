@@ -1,0 +1,96 @@
+.services {
+	padding: 70px 0;
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 18px;
+	font-family: 'Segoe UI', sans-serif;
+	background-color: #4bcaff;
+}
+
+.services__header {
+	position: relative;
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 30px;
+	line-height: 24px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.services__header:after {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	width: 45px;
+	height: 2px;
+	background-color: currentColor;
+}
+
+.services__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.services__services-card {
+	position: relative;
+	width: 270px;
+	margin-top: 35px;
+	padding-top: 70px;
+}
+
+.services-card_coffee::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 34px;
+	height: 48px;
+	background-image: url('../img/coffee.png');
+	background-repeat: no-repeat;
+}
+
+.services-card_instant::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 48px;
+	height: 48px;
+	background-image: url('../img/instant.png');
+	background-repeat: no-repeat;
+}
+
+.services-card_serious::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 47px;
+	height: 45px;
+	background-image: url('../img/dslr.png');
+	background-repeat: no-repeat;
+}
+
+.services-card_frame::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 48px;
+	height: 48px;
+	background-image: url('../img/frame.png');
+	background-repeat: no-repeat;
+}
+
+.services-card__header {
+	margin: 0;
+	font-size: 24px;
+	line-height: 24px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
