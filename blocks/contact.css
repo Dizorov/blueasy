@@ -32,9 +32,14 @@
 }
 
 .contact__form {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	margin-top: 40px;
 }
 
@@ -53,7 +58,8 @@
 .contact__input {
 	margin-bottom: 30px;
 	padding: 12px 20px 17px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	width: 470px;
 	color: #ffffff;
 	font-size: 20px;
@@ -71,7 +77,8 @@
 	width: 1170px;
 	margin-bottom: 35px;
 	padding: 12px 20px 17px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	color: #ffffff;
 	font-size: 20px;
 	line-height: 28px;
@@ -84,7 +91,8 @@
 	background-color: rgba(0, 0, 0, 0.1);
 	border: 2px solid #ffffff;
 	outline: none;
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 }
 
 .contact__input:hover,
@@ -94,7 +102,8 @@
 
 .contact__input:invalid {
 	border-color: #ff5050;
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 }
 
 .contact__button {
@@ -107,9 +116,11 @@
 }
 
 .contact__button:hover {
-	filter: saturate(80%);
+	-webkit-filter: saturate(80%);
+	        filter: saturate(80%);
 }
 
 .contact__button:active {
-	filter: contrast(80%);
+	-webkit-filter: contrast(80%);
+	        filter: contrast(80%);
 }

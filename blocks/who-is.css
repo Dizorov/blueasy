@@ -40,6 +40,8 @@
 }
 
 .who-is__social {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin: 0;
 	padding: 0;
@@ -47,6 +49,8 @@
 }
 
 .who-is__social-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin: 0;
 	margin-top: 10px;
@@ -54,7 +58,10 @@
 	padding: 0;
 	width: 60px;
 	height: 60px;
-	box-shadow: 0 0 0 2px #ffffff;
+	-webkit-box-shadow: 0 0 0 2px #ffffff;
+	        box-shadow: 0 0 0 2px #ffffff;
+	-webkit-transition: .1s ease-out;
+	-o-transition: .1s ease-out;
 	transition: .1s ease-out;
 }
 
@@ -70,7 +77,9 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	background-repeat: no-repeat;
 	background-size: 100%;
 
@@ -101,5 +110,7 @@
 }
 
 .who-is__social-item:hover {
-	transform: scale(0.95);
+	-webkit-transform: scale(0.95);
+	    -ms-transform: scale(0.95);
+	        transform: scale(0.95);
 }

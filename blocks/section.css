@@ -48,5 +48,6 @@
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: bold;
-	box-shadow: 0 0 0 2px #353f46;
+	-webkit-box-shadow: 0 0 0 2px #353f46;
+	        box-shadow: 0 0 0 2px #353f46;
 }
