@@ -6,8 +6,12 @@
 }
 
 .portfolio__nav-bar {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .portfolio__header {
@@ -31,18 +35,29 @@
 }
 
 .portfolio__portfolio-nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
 .portfolio-nav__item {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin: 0 10px;
 	padding: 0;
 }
@@ -55,17 +70,36 @@
 	font-weight: bold;
 	text-decoration: none;
 	text-transform: uppercase;
+	-webkit-transition: .05s ease-out;
+	-o-transition: .05s ease-out;
+	transition: .05s ease-out;
+}
+
+.portfolio-nav__link:hover {
+	color: #4bcaff;
 }
 
 .portfolio-nav__link--current {
 	color: #4bcaff;
-	box-shadow: 0 0 0 2px #4bcaff;
+	-webkit-box-shadow: 0 0 0 2px #4bcaff;
+	        box-shadow: 0 0 0 2px #4bcaff;
+}
+
+.portfolio-nav__link--current:hover {
+	color: #515f67;
+	-webkit-box-shadow: 0 0 0 2px #515f67;
+	        box-shadow: 0 0 0 2px #515f67;
 }
 
 .portfolio__list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	margin: 0;
 	margin-bottom: -30px;
 	margin-top: 80px;
@@ -92,6 +126,10 @@
 	top: 0;
 	left: 0;
 	background-color: rgba(53, 63, 70, 0.85);
+	-webkit-animation-name: show;
+	        animation-name: show;
+	-webkit-animation-duration: .15s;
+	        animation-duration: .15s;
 }
 
 .portfolio__item:hover::after {
@@ -103,5 +141,21 @@
 	height: 33px;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	-webkit-animation-name: show;
+	        animation-name: show;
+	-webkit-animation-duration: .15s;
+	        animation-duration: .15s;
+}
+
+@-webkit-keyframes show {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@keyframes show {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
 }
